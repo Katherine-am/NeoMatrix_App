@@ -15,7 +15,7 @@ namespace NeoMatrix_App.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult KK()
         {
             return View();
         }
