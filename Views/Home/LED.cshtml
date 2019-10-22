@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "LED";
+}
+
+<div class="text-center">
+    <h1 class="display-4">LED Cool Shit</h1>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <form action="/Print" method="post">
+                <div class="form-group">
+                    <input type="text" class = "form-control" name = "print" placeholder = "Input text here (must be less than x characters)">
+                </div>
+                <div class="row">
+                    <div class="col-2 offset-5">
+                        <div class="form-group">
+                            <label for="color">Color picker</label>
+                            <input type="color" class = "form-control" name = "color">
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" class = "btn btn-outline-primary" value = "Display">
+            </form>
+        </div>
+    </div>
+</div>

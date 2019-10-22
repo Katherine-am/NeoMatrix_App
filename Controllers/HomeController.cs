@@ -10,11 +10,25 @@ namespace NeoMatrix_App.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpGet("")]
         public IActionResult Index()
         {
             return View();
         }
 
+[       HttpGet("LED")]
+        public IActionResult LED()
+        {
+            return View();
+        }
+
+        [HttpPost("Print")]
+        public IActionResult Print(string print, string color)
+        {
+            return RedirectToAction("LED");
+        }
+
+        [HttpGet("KK")]
         public IActionResult KK()
         {
             return View();
