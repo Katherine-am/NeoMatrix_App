@@ -11,6 +11,17 @@ namespace NeoMatrix_App.Controllers
 {
     public class HomeController : Controller
     {
+        public static string name;
+        public static string color;
+        public static string text;
+
+        [HttpGet("/Output")]
+        public IActionResult Output()
+        {
+            return Json(new {Name = name, Color = color, Text = text});
+        }
+
+
         [HttpGet("")]
         public IActionResult Index()
         {
@@ -25,22 +36,19 @@ namespace NeoMatrix_App.Controllers
         }
 
         [HttpPost("Name")]
-        public IActionResult Name(string name)
+        public IActionResult Name(string Name)
         {
-            HttpContext.Session.SetString("UserName", name); 
-            @ViewBag.Name = HttpContext.Session.GetString("UserName");
+            name = $"Welcome, {Name}";
             return RedirectToAction("LED");
         }
 
 
         [HttpPost("Print")]
-        public IActionResult Print(string print, string color)
+        public IActionResult Print(string print, string Color)
         {
             @ViewBag.Name = HttpContext.Session.GetString("UserName");
-            System.Console.WriteLine("+++++++++++++++++++++++++++");
-            System.Console.WriteLine(print);
-            System.Console.WriteLine(color);
-            @ViewBag.Name = HttpContext.Session.GetString("UserName");
+            color = Color;
+            text = print;
             return RedirectToAction("LED");
         }
 
