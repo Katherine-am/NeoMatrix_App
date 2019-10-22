@@ -2,7 +2,8 @@
     font-family: Helvetica, sans-serif;
 }
 
-h1 {
+h1,
+h3 {
     font-weight: 75;
     margin: 30px 0;
 }

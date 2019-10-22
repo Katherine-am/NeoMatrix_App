@@ -2,23 +2,33 @@
     ViewData["Title"] = "LED";
 }
 
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Restart">Restart</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+    </div>
+</nav>
 <div class="text-center">
-    <h1 class="display-4">LED Cool Shit</h1>
+    <h1 class="display-4">Welcome, @ViewBag.Name</h1>
     <div class="row">
+        <h3 class="text-center">Let's do some cool stuff</h3>
         <div class="col-8 offset-2">
             <form action="/Print" method="post">
                 <div class="form-group">
-                    <input type="text" class = "form-control" name = "print" placeholder = "Input text here (must be less than x characters)">
+                    <input type="text" class="form-control" name="print" placeholder="Input text here (must be less than x characters)">
                 </div>
                 <div class="row">
                     <div class="col-2 offset-5">
                         <div class="form-group">
                             <label for="color">Color picker</label>
-                            <input type="color" class = "form-control" name = "color">
+                            <input type="color" class="form-control" name="color">
                         </div>
                     </div>
                 </div>
-                <input type="submit" class = "btn btn-outline-primary" value = "Display">
+                <input type="submit" class="btn btn-outline-primary" value="Display">
             </form>
         </div>
     </div>
