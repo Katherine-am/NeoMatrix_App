@@ -1,0 +1,15 @@
+.header {
+    height: 70vh; //vh = View Height
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.8),
+        rgba($color-primary, 0.8)),
+    url("../img/BreadboardLEDs.jpg");
+    background-size: cover;
+
+    &__image {
+    
+    }
+
+    &__label
+}

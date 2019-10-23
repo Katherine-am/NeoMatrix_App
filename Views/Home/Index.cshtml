@@ -1,21 +1,37 @@
-@{
-    ViewData["Title"] = "Welcome";
-}
 <!DOCTYPE>
 <html>
 <head>
     <link rel="stylesheet" href="~/css/index.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Karla|Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f31887499e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <a href="https://unsplash.com/photos/pjTU9Edzc1g">photocred</a>
-    <h3>Has anyone told you?</h3>
-    <h1>You're Glowing</h1>
-    <h6>May I ask your name:</h6>
-    <form action="/Name" method="post">
-        <div class="form-group">
-            <input type="text" class="form-control" name="name" placeholder="Your name...">
+    <header class="header">
+        <img src="../img/BreadboardLEDs.jpg" alt="lit up breadboard" class="header__img">
+        <div class="header__label">
+            <span class="header_welcome">Has anyone told you?</span>
+            <span class="header_welcome">You're glowing.</span>
+            <form action="/Name" method="post">
+                <div class="form-group col-lg-4">
+                    <input type="text" class="form-control" name="name" placeholder="Your name...">
+                </div>
+                <input type="submit" class="btn btn-outline-success" value="Next">
+            </form>
         </div>
-        <input type="submit" class="btn btn-outline-success" value="Next">
-    </form>
+    </header>
+    <a href="https://unsplash.com/photos/pjTU9Edzc1g">photocred</a>
+    <!-- <div class="container">
+        <div class="text-center">
+            <h3>Has anyone told you?</h3>
+            <h1>You're Glowing</h1>
+            <h6>May I ask your name:</h6>
+            <form action="/Name" method="post">
+                <div class="form-group col-lg-4">
+                    <input type="text" class="form-control" name="name" placeholder="Your name...">
+                </div>
+                <input type="submit" class="btn btn-outline-success" value="Next">
+            </form>
+        </div>
+    </div> -->
 </body>
 </html>
