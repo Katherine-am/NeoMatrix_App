@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NeoMatrix_App.Models;
+
+
 
 namespace NeoMatrix_App.Controllers
 {
@@ -14,13 +18,12 @@ namespace NeoMatrix_App.Controllers
         public static string name;
         public static string color;
         public static string text;
-
+        
         [HttpGet("/Output")]
         public IActionResult Output()
         {
             return Json(new {Name = name, Color = color, Text = text});
         }
-
 
         [HttpGet("")]
         public IActionResult Index()
@@ -42,12 +45,11 @@ namespace NeoMatrix_App.Controllers
             return RedirectToAction("LED");
         }
 
-
         [HttpPost("Print")]
-        public IActionResult Print(string print, string Color)
+        public IActionResult Print(string print, string C)
         {
             @ViewBag.Name = HttpContext.Session.GetString("UserName");
-            color = Color;
+            color = C;
             text = print;
             return RedirectToAction("LED");
         }
