@@ -1,0 +1,32 @@
+{
+  "name": "neomatrix_app",
+  "version": "1.0.0",
+  "description": "neomatrix gulp install attempt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass wwwroot/sass/main.scss wwwroot/css/style.css -w",
+    "server": "live-server --browser=chrome",
+    "start": "npm-run-all --parallel server sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Katherine-am/NeoMatrix_App.git"
+  },
+  "author": "Katherine Martin and Kirsten Lindblom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Katherine-am/NeoMatrix_App/issues"
+  },
+  "homepage": "https://github.com/Katherine-am/NeoMatrix_App#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-connect": "latest"
+  }
+}

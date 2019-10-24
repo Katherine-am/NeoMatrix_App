@@ -1,20 +1,4 @@
-﻿* {
-    font-family: Helvetica, sans-serif;
-}
-
-h1,
-h3 {
-    font-weight: 75;
-    margin: 30px 0;
-}
-
-img {
-    height: 300px;
-    width: 230px;
-    margin: 20px 0;
-}
-
-
+﻿
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
