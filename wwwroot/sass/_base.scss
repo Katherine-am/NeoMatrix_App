@@ -1,5 +1,6 @@
 $color-primary: #0e1111;
 $color-secondary: #95ffff;
+$color-text: #19e9e9;
 
 $font-primary: 'Roboto', sans-serif;
 
@@ -17,18 +18,18 @@ html {
 
     font-size: 62.5%; //10 px = 1rem; 10/16px = 62.5%;
 
-    @include responsive(tab-land) {
-        font-size: 56.25%; // 9px = 1rem; 9/16px = 56.25%;
-    }
-    @include responsive(tab-port) {
-        font-size: 50%; // 8px = 1rem; 8/16px = 56.25%;
-    }
-    @include responsive(phone) {
-        font-size: 43.75%; // 7px = 1rem; 7/16px = 56.25%;
-    }
-    @include responsive(desktop) {
-        font-size: 75%; // 12px = 1rem; 12/16px = 56.25%;
-    }
+    // @include responsive(tab-land) {
+    //     font-size: 56.25%; // 9px = 1rem; 9/16px = 56.25%;
+    // }
+    // @include responsive(tab-port) {
+    //     font-size: 50%; // 8px = 1rem; 8/16px = 56.25%;
+    // }
+    // @include responsive(phone) {
+    //     font-size: 43.75%; // 7px = 1rem; 7/16px = 56.25%;
+    // }
+    // @include responsive(desktop) {
+    //     font-size: 75%; // 12px = 1rem; 12/16px = 56.25%;
+    // }
 }
 
 body {
