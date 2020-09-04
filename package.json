@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Katherine-am/NeoMatrix_App#readme",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
